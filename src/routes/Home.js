@@ -57,7 +57,7 @@ const Movies = styled.div`
   top: -50px;
 `;
 export default ()=>{ 
-    const {loading, error,  data} = useQuery(GET_MOVIES);
+    const {loading,data} = useQuery(GET_MOVIES);
     return (
         <Container>
             <Header>
