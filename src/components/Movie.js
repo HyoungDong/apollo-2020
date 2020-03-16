@@ -19,12 +19,13 @@ const Poster = styled.div`
 `;
 
 
-export default ({id,bg}) =>{
+export default ({id,bg,isLiked}) =>{
     return (
         <Container>
         <Link to = {`/${id}`}>
         <Poster bg = {bg}></Poster>
         </Link>
+        <button>{isLiked?"Unlike":"Like"}</button>
         </Container>
     );
 }

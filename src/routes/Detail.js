@@ -13,6 +13,10 @@ const GET_MOVIE = gql`
             rating
             description_intro
         }
+        suggestions(id: $id){
+            id
+            medium_cover_image
+        }
     }
 `;
 const Container = styled.div`
